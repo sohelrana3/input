@@ -265,7 +265,7 @@ function App() {
                             onClick={handlebutton}
                             className="bg-white px-6"
                         >
-                            Button
+                            Calculate
                         </button>
                         <div className="text-center">
                             <Headding title="Division" />
