@@ -119,20 +119,16 @@ function App() {
             !Minusref.current.value &&
             !Multiplicationref.current.value
         ) {
-            if (Divisionref.current.value > total) {
-                seterr("Please add input your number");
-            } else {
-                update(ref(db, "input/" + editid), {
-                    preposition: "by",
-                    text: "Dividing",
-                    prev: total,
-                    input: Division,
-                    total: total / Division,
-                });
+            update(ref(db, "input/" + editid), {
+                preposition: "by",
+                text: "Dividing",
+                prev: total,
+                input: Division,
+                total: total / Division,
+            });
 
-                seterr("");
-                Divisionref.current.value = "";
-            }
+            seterr("");
+            Divisionref.current.value = "";
         } else if (
             !addref.current.value &&
             !Divisionref.current.value &&
@@ -152,19 +148,15 @@ function App() {
             !Divisionref.current.value &&
             !Minusref.current.value
         ) {
-            if (Multiplicationref.current.value > total) {
-                seterr("Please add input your number");
-            } else {
-                update(ref(db, "input/" + editid), {
-                    preposition: "with",
-                    text: "Multiplying",
-                    prev: total,
-                    input: Multiplication,
-                    total: total * Multiplication,
-                });
+            update(ref(db, "input/" + editid), {
+                preposition: "with",
+                text: "Multiplying",
+                prev: total,
+                input: Multiplication,
+                total: total * Multiplication,
+            });
 
-                Multiplicationref.current.value = "";
-            }
+            Multiplicationref.current.value = "";
         } else {
             seterr("Please give me one Inputbox data");
         }
@@ -197,21 +189,17 @@ function App() {
             !Minusref.current.value &&
             !Multiplicationref.current.value
         ) {
-            if (Divisionref.current.value > total) {
-                seterr("Please add input your number");
-            } else {
-                set(push(ref(db, "input/")), {
-                    preposition: "by",
-                    text: "Dividing",
-                    prev: total,
-                    input: Division,
-                    total: total / Division,
-                });
+            set(push(ref(db, "input/")), {
+                preposition: "by",
+                text: "Dividing",
+                prev: total,
+                input: Division,
+                total: total / Division,
+            });
 
-                seterr("");
-                seterr("");
-                Divisionref.current.value = "";
-            }
+            seterr("");
+            seterr("");
+            Divisionref.current.value = "";
         } else if (
             !addref.current.value &&
             !Divisionref.current.value &&
@@ -231,19 +219,15 @@ function App() {
             !Divisionref.current.value &&
             !Minusref.current.value
         ) {
-            if (Multiplicationref.current.value > total) {
-                seterr("Please add input your number");
-            } else {
-                set(push(ref(db, "input/")), {
-                    preposition: "with",
-                    text: "Multiplying",
-                    prev: total,
-                    input: Multiplication,
-                    total: total * Multiplication,
-                });
+            set(push(ref(db, "input/")), {
+                preposition: "with",
+                text: "Multiplying",
+                prev: total,
+                input: Multiplication,
+                total: total * Multiplication,
+            });
 
-                Multiplicationref.current.value = "";
-            }
+            Multiplicationref.current.value = "";
         } else {
             seterr("Please give me one Inputbox data");
         }
