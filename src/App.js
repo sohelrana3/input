@@ -54,7 +54,7 @@ function App() {
     let [Division, setDivision] = useState();
     let [Minus, setMinus] = useState();
     let [Multiplication, setMultiplication] = useState();
-    let [total, settotal] = useState(0);
+    let [total, settotal] = useState();
     let [list, setlist] = useState([]);
     let [editid, seteditid] = useState("");
     let [upprev, setupprev] = useState(0);
